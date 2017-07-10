@@ -1,6 +1,7 @@
 {
   "background_color": "#F6C637",
   "theme_color": "#F6C637",
+  "start_url": "./?utm_source=web_app_manifest",
   "name": "Tangerine",
   "short_name": "Tangerine",
   "display": "standalone",
