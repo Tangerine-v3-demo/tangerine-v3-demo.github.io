@@ -8,7 +8,8 @@
 		
         // updatefound is fired if service-worker.js changes.
         registration.onupdatefound = function() {
-		console.log('This app is updating. Press ok to continue and then you will be notified when the update is complete.')
+          console.log('This app is installing.')
+          alert('This app is installing.')
           // The updatefound event implies that registration.installing is set; see
           // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
           var installingWorker = registration.installing;
@@ -21,13 +22,15 @@
                   // have been added to the cache.
                   // It's the perfect time to display a "New content is available; please refresh."
                   // message in the page's interface.
-                  console.log('New or updated content is available. Please reload.');
+                  console.log('Your app has been updated. Please reload.');
+                  alert('Your app has been updated. Please reload.');
                 } else {
                   // At this point, everything has been precached, but the service worker is not
                   // controlling the page. The service worker will not take control until the next
                   // reload or navigation to a page under the registered scope.
                   // It's the perfect time to display a "Content is cached for offline use." message.
-                  console.log('App is now available for offline use.')
+                  console.log('This App has been installed and is now ready for offline use.');
+                  alert('This App has been installed and is now ready for offline use.');
                 }
               break;
 
@@ -41,4 +44,4 @@
         // registration failed :(
         console.log('ServiceWorker registration failed: ', err);
       });
-    }</script><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="apple-touch-icon" sizes="60x60" href="/assets/logos/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/logos/favicon-16x16.png"><link rel="icon" type="image/png" sizes="512x512" href="/assets/logos/tangerine--512-512.png"><link rel="mask-icon" href="/assets/logos/safari-pinned-tab.svg" color="#5bbad5"><meta name="theme-color" content="#ffffff"><link href="styles.b456e05426a51337da8f.bundle.css" rel="stylesheet"/></head><body><app-root>Loading...</app-root><script type="text/javascript" src="inline.2e92ab84a6d4ebcf95fa.bundle.js"></script><script type="text/javascript" src="polyfills.748870f8a7b58ee6854c.bundle.js"></script><script type="text/javascript" src="vendor.793ca3e286c7dfbc2d57.bundle.js"></script><script type="text/javascript" src="main.6d85c1cfae3024c13053.bundle.js"></script></body></html>
+    }</script><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="apple-touch-icon" sizes="60x60" href="/assets/logos/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/logos/favicon-16x16.png"><link rel="icon" type="image/png" sizes="512x512" href="/assets/logos/tangerine--512-512.png"><link rel="mask-icon" href="/assets/logos/safari-pinned-tab.svg" color="#5bbad5"><meta name="theme-color" content="#ffffff"><link href="styles.b456e05426a51337da8f.bundle.css" rel="stylesheet"/></head><body><app-root>Loading...</app-root><script type="text/javascript" src="inline.1fb27833db0ba373e7e5.bundle.js"></script><script type="text/javascript" src="polyfills.748870f8a7b58ee6854c.bundle.js"></script><script type="text/javascript" src="vendor.793ca3e286c7dfbc2d57.bundle.js"></script><script type="text/javascript" src="main.b5cc8c562d3f53676fc0.bundle.js"></script></body></html>
