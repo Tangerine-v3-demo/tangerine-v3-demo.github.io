@@ -27,6 +27,7 @@
                   // If URL has a hash, we have to carve it out less there will be no reload.
                   window.location = window.location.href.replace('\/\#', '');
                   /* TODO: Support for reloading when app is not in the TLDR's root.
+                     TODO: Prompt user wether or not they want to reload. 
                   if (window.location.href.indexOf('\/\#') !== -1) {
                     window.location = window.location.href;
                   } else {
