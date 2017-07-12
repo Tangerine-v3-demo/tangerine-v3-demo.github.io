@@ -22,8 +22,10 @@
                   // have been added to the cache.
                   // It's the perfect time to display a "New content is available; please refresh."
                   // message in the page's interface.
-                  console.log('Your app has been updated. Please reload.');
+                  console.log('Your app has been updated. Reloading now.');
                   alert('Your app has been updated. Please reload.');
+				  var loc = window.location;
+				  window.location = loc;
                 } else {
                   // At this point, everything has been precached, but the service worker is not
                   // controlling the page. The service worker will not take control until the next
